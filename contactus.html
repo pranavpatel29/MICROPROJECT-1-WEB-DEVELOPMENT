@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Solar Panel Project</title>
+
+    <style>
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #218838;
+    border-radius: 4px;
+}
+
+        :root {
+            --primary-color: #28a745; 
+            --secondary-color: #007bff; 
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --font-family: Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #fff;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--light-bg);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .container p {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        button {
+            background: var(--secondary-color);
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background: var(--text-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 40px;
+        }
+
+        /* Animation Classes */
+        .pop {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .pop:hover {
+            transform: scale(1.05); 
+        }
+
+        .slide-right {
+            transform: translateX(-40px);
+            opacity: 0;
+            animation: slideRight 1s ease-out forwards;
+        }
+
+        @keyframes slideRight {
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .slide-up {
+            transform: translateY(20px);
+            opacity: 0;
+            animation: slideUp 1s ease forwards;
+        }
+
+        @keyframes slideUp {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+   <header class="slide-right" >  <h2>Contact Us</h2>
+
+         <nav>
+    <ul>
+        <li><a href="C:\Users\LAB704\Desktop\WEBLAB_FYCM1_44\hackk.html">Home</a></li>
+        <li><a href="C:\Users\LAB704\Desktop\WEBLAB_FYCM1_44\investorrelation.html">Investor Relations</a></li>
+        <li><a href="C:\Users\LAB704\Desktop\WEBLAB_FYCM1_44\customersrvce.html">Customer Service</a></li>
+        <li><a href="C:\Users\LAB704\Desktop\WEBLAB_FYCM1_44\sdgrelation.html">SDG Relation</a></li>
+        <li><a href="C:\Users\LAB704\Desktop\WEBLAB_FYCM1_44\aboutus.html">About Us</a></li>
+        <li><a href="C:\Users\LAB704\Desktop\WEBLAB_FYCM1_44\contactus.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+      </header>
+
+    <div class="container slide-up">
+        <h2>Get In Touch</h2>
+        <p>
+            Have questions about our Solar Panel Project? Want to know more about how solar energy works?
+            Fill out the form below and we’ll respond as soon as we can!
+        </p>
+
+        <form>
+            <input type="text" placeholder="Your Name" required class="pop">
+            <input type="email" placeholder="Your Email" required class="pop">
+            <input type="text" placeholder="Subject" required class="pop">
+            <textarea placeholder="Your Message..." required class="pop"></textarea>
+            <button type="submit" class="pop">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2025 Solar Panel Student Project | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

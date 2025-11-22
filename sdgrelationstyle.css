@@ -1,0 +1,116 @@
+a{
+color: snow ;
+color: white;
+cursor: pointer ;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+a:hover{
+ padding: 20px;
+ background-color: lightgreen ;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container2 {
+            width: 70%;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+#blacks{
+
+color: rgb(0, 74, 173) ;
+}
+#black{
+color: black ;
+}
+ul {
+            background-color: white;
+            padding: 15px;
+            border-left: 4px solid rgb(0, 74, 173);
+            border-radius: 4px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .summary {
+            background: white ;
+            padding: 15px;
+            border-left: 4px solid rgb(0, 74, 173);
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+h1{
+color: white ;
+background-color: green ;
+
+}
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: green;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 10px;
+        }
+
+        .goal {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .goal h2 {
+            color: #004aad;
+        }
+
+     
+        .sdg7 {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+            margin-top: 40px;
+        }
+
+        .sdg7 h2 {
+            color:blue ;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #004aad;
+            color: white;
+            margin-top: 40px;
+        }

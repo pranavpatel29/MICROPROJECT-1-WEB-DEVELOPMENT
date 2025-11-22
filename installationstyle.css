@@ -1,0 +1,174 @@
+:root {
+    --primary-green: #28a745;   
+    --secondary-blue: #007bff;  
+    --text-dark: #212529;       
+    --background-light: #f8f9fa;
+    --card-border: #ced4da;     
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: white;
+}
+
+header {
+    background: var(--primary-green);
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 0.75rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    display: block;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+nav ul li a:hover,
+nav ul li a[href="installation.html"] { 
+    background-color: var(--secondary-blue);
+}
+
+main {
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.introduction {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--background-light);
+    border-left: 5px solid var(--secondary-blue);
+    border-radius: 4px;
+}
+
+.introduction h2 {
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+.installation-steps {
+    list-style: none; 
+    padding: 0;
+    counter-reset: step-counter; 
+}
+
+.step-item {
+    background-color: white;
+    border: 1px solid var(--card-border);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: relative;
+    padding-left: 70px; }
+
+.step-item::before {
+    counter-increment: step-counter; 
+    content: "Step " counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    background-color: var(--primary-green);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px 0 0 6px;
+    box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.step-item h3 {
+    color: var(--secondary-blue);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.step-item ul {
+    margin-top: 10px;
+    margin-left: 20px;
+    list-style-type: disc;
+    color: var(--primary-green);
+}
+
+.step-item ul li {
+    color: var(--text-dark); 
+}
+
+.final-step::before {
+    background-color: var(--primary-green);
+}
+
+.final-step h3 {
+    color: var(--secondary-blue);
+}
+
+footer {
+    background: var(--text-dark);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    margin-top: 30px;
+}
+.pop {
+  transition: transform 0.2s ease-in-out;
+}
+
+.pop:hover {
+  transform: scale(1.05); 
+}
+.slide-right {
+  transform: translateX(-40px);
+  opacity: 0;
+  animation: slideRight 0.5s ease-out forwards;
+}
+
+@keyframes slideRight {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUp 0.5s ease forwards;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
